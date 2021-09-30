@@ -2999,7 +2999,7 @@ $ujian = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM ujian where statu
 				$('#waktu').load('<?= $homeurl ?>/admin/_load.php?pg=waktu');
 				$('#log-list').load('<?= $homeurl ?>/admin/_load.php?pg=log');
 				$('#pengumuman').load('<?= $homeurl ?>/admin/_load.php?pg=pengumuman');
-			}, 1000
+			}, 30000
 		);
 		<?php if ($pg == 'status') { ?>
 			var autoRefresh = setInterval(
